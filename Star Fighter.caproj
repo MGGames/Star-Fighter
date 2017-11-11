@@ -1,0 +1,3029 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Star Fighter</name>
+    <description>Space shootemup</description>
+    <version>1.0.0.0</version>
+    <author>MG Games</author>
+    <author-email>mggames0@hotmail.com</author-email>
+    <author-website>www.mg-games.co.uk</author-website>
+    <app-id></app-id>
+    <unique-id>1e7yrg8c0isz9</unique-id>
+    <saved-with-version>23300</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML 5" />
+    </configurations>
+    <window-size>
+        <width>720</width>
+        <height>960</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Title</first-layout>
+    <use-loader-layout>1</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview mode">HTTP</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use iOS retina display">No</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Title">
+            <object-type name="BeginText" sid="0">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="InfoText" sid="1">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="TitleText" sid="2">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="logo" sid="3">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4" speed="5">
+                        <frame duration="1" hotspotX="0.493075" hotspotY="0.505263" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\title.png">
+                            <collision-poly>
+                                <point x="0.0216592" y="0" />
+                                <point x="0.489278" y="0.367302" />
+                                <point x="0.750125" y="0.327333" />
+                                <point x="0.963257" y="0.500534" />
+                                <point x="0.995068" y="1" />
+                                <point x="0.489278" y="1" />
+                                <point x="0.387483" y="0.347318" />
+                                <point x="0.218886" y="0.500534" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Backgrounds">
+            <object-type name="Background1" sid="5">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6" speed="5">
+                        <frame duration="1" format="jpeg" hotspotX="0.499022" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\background 3.png" quality="75">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="4.89901e-009" y="0.999609" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Background3" sid="9">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="10" speed="5">
+                        <frame duration="1" format="jpeg" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\397989.jpg" quality="75" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Background2" sid="7621139900278735">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="3589433705621677">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2463538089152057" speed="5">
+                        <frame duration="1" hotspotX="0.500489" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\background 2.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Background4" sid="8028859089748735">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="5801318628219727">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4231255151928155" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\background 1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Backgroundboss" sid="3923011587831007">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="2865627572925025">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3707501658574184" speed="5">
+                        <frame duration="1" hotspotX="0.500489" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\background 2.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Backgroundboss2" sid="8145306946728603">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="4603173611424974">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1895622082300244" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\background 1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Game">
+            <object-type name="Explosion1" sid="13">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="40" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="14" speed="15">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Player" sid="15">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Health" sid="16" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="BoundToLayout" sid="17">
+                        <behavior id="bound" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="7713355307636754">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="18" speed="12">
+                        <frame duration="1" hotspotX="0.502222" hotspotY="0.475269">
+                            <image-point name="Imagepoint 1" x="0.482963" y="-0.174194" />
+                            <collision-poly>
+                                <point x="0.149006" y="0.246142" />
+                                <point x="0.499883" y="0" />
+                                <point x="0.836725" y="0.257527" />
+                                <point x="0.841404" y="0.499462" />
+                                <point x="1" y="0.519386" />
+                                <point x="1" y="0.82394" />
+                                <point x="0.502222" y="1" />
+                                <point x="0" y="0.812555" />
+                                <point x="0" y="0.51654" />
+                                <point x="0.149006" y="0.505155" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="1" name="TiltLeft" pingpong="0" repeatcount="1" repeatto="0" sid="19" speed="12">
+                        <frame duration="1" hotspotX="0.432974" hotspotY="0.440928" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Player\Left.png">
+                            <image-point name="Imagepoint 1" x="0.405239" y="-0.299578" />
+                            <collision-poly>
+                                <point x="0" y="0.192119" />
+                                <point x="0.407612" y="0" />
+                                <point x="0.918941" y="0.185634" />
+                                <point x="0.918941" y="0.451528" />
+                                <point x="1" y="0.480712" />
+                                <point x="1" y="0.834158" />
+                                <point x="0.433179" y="1" />
+                                <point x="0" y="0.840643" />
+                                <point x="0" y="0.487197" />
+                                <point x="0" y="0.445043" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="1" name="TiltRight" pingpong="0" repeatcount="1" repeatto="0" sid="20" speed="12">
+                        <frame duration="1" hotspotX="0.58" hotspotY="0.44" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Player\Right.png">
+                            <image-point name="Imagepoint 1" x="0.58" y="-0.298947" />
+                            <collision-poly>
+                                <point x="0.0951904" y="0.198186" />
+                                <point x="0.59844" y="0" />
+                                <point x="1" y="0.188479" />
+                                <point x="1" y="0.453813" />
+                                <point x="1" y="0.482936" />
+                                <point x="1" y="0.82593" />
+                                <point x="0.580205" y="1" />
+                                <point x="0" y="0.829166" />
+                                <point x="0" y="0.486172" />
+                                <point x="0.0806045" y="0.457049" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bullet2" sid="21">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="22">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="23">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="24" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.518519">
+                            <collision-poly>
+                                <point x="0.5" y="0.407407" />
+                                <point x="0.826923" y="0.333333" />
+                                <point x="0.923077" y="0.481481" />
+                                <point x="0.826923" y="0.666667" />
+                                <point x="0.5" y="0.555556" />
+                                <point x="0.461538" y="0.481481" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GunFlare" sid="25">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="26" speed="40">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="EnemySpawner" sid="27">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Type" sid="28" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="29" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.513514" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="EnemyBullet" sid="30">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="31">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="32">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="33" speed="12">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.28125" y="0.28125" />
+                                <point x="0.5" y="0.1875" />
+                                <point x="0.71875" y="0.28125" />
+                                <point x="0.8125" y="0.5" />
+                                <point x="0.71875" y="0.71875" />
+                                <point x="0.5" y="0.78125" />
+                                <point x="0.3125" y="0.6875" />
+                                <point x="0.21875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BladeEnemy" sid="34">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Health" sid="35" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Bullet" sid="36">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="37">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="40" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="38" speed="35">
+                        <frame duration="1" hotspotX="0.441237" hotspotY="0.494845" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0001.png">
+                            <collision-poly>
+                                <point x="0" y="0.108248" />
+                                <point x="0.441237" y="0" />
+                                <point x="1" y="0.108248" />
+                                <point x="1" y="0.494845" />
+                                <point x="1" y="0.881443" />
+                                <point x="0.441237" y="1" />
+                                <point x="0" y="0.881443" />
+                                <point x="0" y="0.494845" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.441423" hotspotY="0.494781" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0002.png">
+                            <collision-poly>
+                                <point x="0" y="0.103341" />
+                                <point x="0.441423" y="0" />
+                                <point x="1" y="0.103341" />
+                                <point x="1" y="0.494781" />
+                                <point x="1" y="0.886221" />
+                                <point x="0.441423" y="1" />
+                                <point x="0" y="0.886221" />
+                                <point x="0" y="0.494781" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.440087" hotspotY="0.494577" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0003.png">
+                            <collision-poly>
+                                <point x="0" y="0.0878528" />
+                                <point x="0.440087" y="0" />
+                                <point x="1" y="0.0878528" />
+                                <point x="1" y="0.494577" />
+                                <point x="1" y="0.901301" />
+                                <point x="0.440087" y="1" />
+                                <point x="0" y="0.901301" />
+                                <point x="0" y="0.494577" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.4375" hotspotY="0.494226" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0004.png">
+                            <collision-poly>
+                                <point x="0" y="0.0612012" />
+                                <point x="0.4375" y="0" />
+                                <point x="1" y="0.0612012" />
+                                <point x="1" y="0.494226" />
+                                <point x="1" y="0.927251" />
+                                <point x="0.4375" y="1" />
+                                <point x="0" y="0.927251" />
+                                <point x="0" y="0.494226" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.432836" hotspotY="0.492537" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0005.png">
+                            <collision-poly>
+                                <point x="0" y="0.0261197" />
+                                <point x="0.432836" y="0" />
+                                <point x="1" y="0.0261197" />
+                                <point x="1" y="0.492537" />
+                                <point x="1" y="0.958955" />
+                                <point x="0.432836" y="1" />
+                                <point x="0" y="0.958955" />
+                                <point x="0" y="0.492537" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.428184" hotspotY="0.493225" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0006.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.428184" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.493225" />
+                                <point x="1" y="1" />
+                                <point x="0.428184" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.493225" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.42928" hotspotY="0.497512" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0007.png">
+                            <collision-poly>
+                                <point x="0" y="0.0310948" />
+                                <point x="0.42928" y="0" />
+                                <point x="1" y="0.0310948" />
+                                <point x="1" y="0.497512" />
+                                <point x="1" y="0.96393" />
+                                <point x="0.42928" y="1" />
+                                <point x="0" y="0.96393" />
+                                <point x="0" y="0.497512" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.435374" hotspotY="0.497727" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0008.png">
+                            <collision-poly>
+                                <point x="0" y="0.0715912" />
+                                <point x="0.435374" y="0" />
+                                <point x="1" y="0.0715912" />
+                                <point x="1" y="0.497727" />
+                                <point x="1" y="0.923863" />
+                                <point x="0.435374" y="1" />
+                                <point x="0" y="0.923863" />
+                                <point x="0" y="0.497727" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.438972" hotspotY="0.495708" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0009.png">
+                            <collision-poly>
+                                <point x="0" y="0.0933479" />
+                                <point x="0.438972" y="0" />
+                                <point x="1" y="0.0933479" />
+                                <point x="1" y="0.495708" />
+                                <point x="1" y="0.898068" />
+                                <point x="0.438972" y="1" />
+                                <point x="0" y="0.898068" />
+                                <point x="0" y="0.495708" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.440994" hotspotY="0.494803" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0010.png">
+                            <collision-poly>
+                                <point x="0" y="0.10499" />
+                                <point x="0.440994" y="0" />
+                                <point x="1" y="0.10499" />
+                                <point x="1" y="0.494803" />
+                                <point x="1" y="0.884615" />
+                                <point x="0.440994" y="1" />
+                                <point x="0" y="0.884615" />
+                                <point x="0" y="0.494803" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.442387" hotspotY="0.494845" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0011.png">
+                            <collision-poly>
+                                <point x="0" y="0.108248" />
+                                <point x="0.442387" y="0" />
+                                <point x="1" y="0.108248" />
+                                <point x="1" y="0.494845" />
+                                <point x="1" y="0.881443" />
+                                <point x="0.442387" y="1" />
+                                <point x="0" y="0.881443" />
+                                <point x="0" y="0.494845" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.441176" hotspotY="0.494737" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0012.png">
+                            <collision-poly>
+                                <point x="0" y="0.1" />
+                                <point x="0.441176" y="0" />
+                                <point x="1" y="0.1" />
+                                <point x="1" y="0.494737" />
+                                <point x="1" y="0.889473" />
+                                <point x="0.441176" y="1" />
+                                <point x="0" y="0.889473" />
+                                <point x="0" y="0.494737" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.440529" hotspotY="0.493392" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0013.png">
+                            <collision-poly>
+                                <point x="0" y="0.0803967" />
+                                <point x="0.440529" y="0" />
+                                <point x="1" y="0.0803967" />
+                                <point x="1" y="0.493392" />
+                                <point x="1" y="0.906387" />
+                                <point x="0.440529" y="1" />
+                                <point x="0" y="0.906387" />
+                                <point x="0" y="0.493392" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.43662" hotspotY="0.492925" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0014.png">
+                            <collision-poly>
+                                <point x="0" y="0.0507078" />
+                                <point x="0.43662" y="0" />
+                                <point x="1" y="0.0507078" />
+                                <point x="1" y="0.492925" />
+                                <point x="1" y="0.935141" />
+                                <point x="0.43662" y="1" />
+                                <point x="0" y="0.935141" />
+                                <point x="0" y="0.492925" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.431472" hotspotY="0.493639" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0015.png">
+                            <collision-poly>
+                                <point x="0" y="0.0165398" />
+                                <point x="0.431472" y="0" />
+                                <point x="1" y="0.0165398" />
+                                <point x="1" y="0.493639" />
+                                <point x="1" y="0.970738" />
+                                <point x="0.431472" y="1" />
+                                <point x="0" y="0.970738" />
+                                <point x="0" y="0.493639" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.420765" hotspotY="0.497268" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0016.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.420765" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.497268" />
+                                <point x="1" y="1" />
+                                <point x="0.420765" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.497268" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.429612" hotspotY="0.497573" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0017.png">
+                            <collision-poly>
+                                <point x="0.109223" y="0.686893" />
+                                <point x="0.429612" y="0.126214" />
+                                <point x="0.873786" y="0.563107" />
+                                <point x="0.878641" y="0.497573" />
+                                <point x="0.868932" y="0.427184" />
+                                <point x="0.429612" y="0.878641" />
+                                <point x="0.0970874" y="0.320388" />
+                                <point x="0.114078" y="0.497573" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.435268" hotspotY="0.496644" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0018.png">
+                            <collision-poly>
+                                <point x="0.174107" y="0.704698" />
+                                <point x="0.435268" y="0.152125" />
+                                <point x="0.84375" y="0.557047" />
+                                <point x="0.848214" y="0.496644" />
+                                <point x="0.841518" y="0.434004" />
+                                <point x="0.435268" y="0.847875" />
+                                <point x="0.0870536" y="0.375839" />
+                                <point x="0.145089" y="0.496644" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.438559" hotspotY="0.495763" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0019.png">
+                            <collision-poly>
+                                <point x="0.224576" y="0.726695" />
+                                <point x="0.438559" y="0.169492" />
+                                <point x="0.858051" y="0.521186" />
+                                <point x="0.830508" y="0.495763" />
+                                <point x="0.824153" y="0.436441" />
+                                <point x="0.438559" y="0.90678" />
+                                <point x="0.065678" y="0.423729" />
+                                <point x="0.163136" y="0.495763" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.440994" hotspotY="0.494845" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0020.png">
+                            <collision-poly>
+                                <point x="0.271222" y="0.758763" />
+                                <point x="0.440994" y="0.17732" />
+                                <point x="0.890269" y="0.480412" />
+                                <point x="0.925466" y="0.494845" />
+                                <point x="0.968944" y="0.587629" />
+                                <point x="0.440994" y="0.989691" />
+                                <point x="0.0289855" y="0.472165" />
+                                <point x="0.0724638" y="0.494845" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.442149" hotspotY="0.493802" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0021.png">
+                            <collision-poly>
+                                <point x="0.0144628" y="0.5" />
+                                <point x="0.442149" y="0.035124" />
+                                <point x="0.938017" y="0.431818" />
+                                <point x="0.983471" y="0.493802" />
+                                <point x="0.946281" y="0.56405" />
+                                <point x="0.442149" y="0.952479" />
+                                <point x="0.0268595" y="0.475207" />
+                                <point x="0.0165289" y="0.493802" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.441614" hotspotY="0.493644" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0022.png">
+                            <collision-poly>
+                                <point x="0.0276008" y="0.525424" />
+                                <point x="0.441614" y="0.0169492" />
+                                <point x="0.995754" y="0.385593" />
+                                <point x="0.961783" y="0.493644" />
+                                <point x="0.932059" y="0.538136" />
+                                <point x="0.441614" y="0.919492" />
+                                <point x="0.356688" y="0.133475" />
+                                <point x="0.0403397" y="0.493644" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.439462" hotspotY="0.49217" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0023.png">
+                            <collision-poly>
+                                <point x="0.029148" y="0.552573" />
+                                <point x="0.439462" y="0.0268456" />
+                                <point x="0.977578" y="0.425056" />
+                                <point x="0.943946" y="0.49217" />
+                                <point x="0.930493" y="0.512304" />
+                                <point x="0.439462" y="0.885906" />
+                                <point x="0.29148" y="0.170022" />
+                                <point x="0.0605381" y="0.49217" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.435407" hotspotY="0.492823" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0024.png">
+                            <collision-poly>
+                                <point x="0.0287081" y="0.588517" />
+                                <point x="0.435407" y="0.0382775" />
+                                <point x="0.873206" y="0.557416" />
+                                <point x="0.92823" y="0.483254" />
+                                <point x="0.435407" y="0.868421" />
+                                <point x="0.227273" y="0.198565" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.430052" hotspotY="0.492228" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0025.png">
+                            <collision-poly>
+                                <point x="0.0233161" y="0.629534" />
+                                <point x="0.430052" y="0.0518135" />
+                                <point x="0.901554" y="0.564767" />
+                                <point x="0.909326" y="0.492228" />
+                                <point x="0.932642" y="0.450777" />
+                                <point x="0.430052" y="0.898964" />
+                                <point x="0.15544" y="0.222798" />
+                                <point x="0.0932643" y="0.492228" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.424802" hotspotY="0.497355" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0026.png">
+                            <collision-poly>
+                                <point x="0.0474934" y="0.674603" />
+                                <point x="0.424802" y="0.0899471" />
+                                <point x="0.907652" y="0.568783" />
+                                <point x="0.91029" y="0.497355" />
+                                <point x="0.905013" y="0.42328" />
+                                <point x="0.424802" y="0.912698" />
+                                <point x="0.0976253" y="0.269841" />
+                                <point x="0.0817942" y="0.497355" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.43128" hotspotY="0.49763" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0027.png">
+                            <collision-poly>
+                                <point x="0.125592" y="0.689573" />
+                                <point x="0.43128" y="0.135071" />
+                                <point x="0.864929" y="0.561611" />
+                                <point x="0.869668" y="0.49763" />
+                                <point x="0.86019" y="0.42891" />
+                                <point x="0.43128" y="0.869668" />
+                                <point x="0.0947867" y="0.336493" />
+                                <point x="0.123223" y="0.49763" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.436404" hotspotY="0.495595" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0028.png">
+                            <collision-poly>
+                                <point x="0.186404" y="0.707048" />
+                                <point x="0.436404" y="0.156388" />
+                                <point x="0.844298" y="0.548458" />
+                                <point x="0.835526" y="0.433921" />
+                                <point x="0.436404" y="0.854626" />
+                                <point x="0.0833333" y="0.387665" />
+                                <point x="0.151316" y="0.495595" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.440252" hotspotY="0.495798" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0029.png">
+                            <collision-poly>
+                                <point x="0.236897" y="0.733193" />
+                                <point x="0.440252" y="0.172269" />
+                                <point x="0.865828" y="0.510504" />
+                                <point x="0.842767" y="0.495798" />
+                                <point x="0.991614" y="0.607143" />
+                                <point x="0.440252" y="0.930672" />
+                                <point x="0.0587002" y="0.436975" />
+                                <point x="0.15304" y="0.495798" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.441237" hotspotY="0.494845" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0030.png">
+                            <collision-poly>
+                                <point x="0.282474" y="0.769072" />
+                                <point x="0.441237" y="0.162887" />
+                                <point x="0.898969" y="0.470103" />
+                                <point x="0.964948" y="0.494845" />
+                                <point x="0.960825" y="0.581443" />
+                                <point x="0.441237" y="0.981443" />
+                                <point x="0.0164948" y="0.486598" />
+                                <point x="0.0371134" y="0.494845" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.441909" hotspotY="0.493776" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0031.png">
+                            <collision-poly>
+                                <point x="0.0186722" y="0.506224" />
+                                <point x="0.441909" y="0.00414938" />
+                                <point x="0.954357" y="0.417012" />
+                                <point x="0.977178" y="0.493776" />
+                                <point x="0.941909" y="0.558091" />
+                                <point x="0.441909" y="0.943983" />
+                                <point x="0.0456432" y="0.454357" />
+                                <point x="0.0228216" y="0.493776" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.439914" hotspotY="0.493562" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0032.png">
+                            <collision-poly>
+                                <point x="0.027897" y="0.532189" />
+                                <point x="0.439914" y="0.0193133" />
+                                <point x="0.993562" y="0.390558" />
+                                <point x="0.954936" y="0.493562" />
+                                <point x="0.929185" y="0.532189" />
+                                <point x="0.439914" y="0.912017" />
+                                <point x="0.33691" y="0.145923" />
+                                <point x="0.0450644" y="0.493562" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.437642" hotspotY="0.493182" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0033.png">
+                            <collision-poly>
+                                <point x="0.0294785" y="0.561364" />
+                                <point x="0.437642" y="0.0295455" />
+                                <point x="0.963719" y="0.443182" />
+                                <point x="0.927438" y="0.506818" />
+                                <point x="0.437642" y="0.881818" />
+                                <point x="0.274376" y="0.179545" />
+                                <point x="0.0657596" y="0.493182" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.434146" hotspotY="0.492683" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0034.png">
+                            <collision-poly>
+                                <point x="0.0268293" y="0.597561" />
+                                <point x="0.434146" y="0.0414634" />
+                                <point x="0.878049" y="0.560976" />
+                                <point x="0.917073" y="0.492683" />
+                                <point x="0.929268" y="0.47561" />
+                                <point x="0.434146" y="0.873171" />
+                                <point x="0.212195" y="0.202439" />
+                                <point x="0.0853659" y="0.492683" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.428571" hotspotY="0.493369" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0035.png">
+                            <collision-poly>
+                                <point x="0.0238095" y="0.644562" />
+                                <point x="0.428571" y="0.0530504" />
+                                <point x="0.912698" y="0.564987" />
+                                <point x="0.915344" y="0.493369" />
+                                <point x="0.931217" y="0.440318" />
+                                <point x="0.428571" y="0.909814" />
+                                <point x="0.134921" y="0.230769" />
+                                <point x="0.0846561" y="0.493369" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.425641" hotspotY="0.498721" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0036.png">
+                            <collision-poly>
+                                <point x="0.0692308" y="0.680307" />
+                                <point x="0.425641" y="0.107417" />
+                                <point x="0.894872" y="0.567775" />
+                                <point x="0.9" y="0.498721" />
+                                <point x="0.892308" y="0.42711" />
+                                <point x="0.425641" y="0.900256" />
+                                <point x="0.0948718" y="0.29156" />
+                                <point x="0.0923077" y="0.498721" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.43287" hotspotY="0.49652" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0037.png">
+                            <collision-poly>
+                                <point x="0.143519" y="0.693735" />
+                                <point x="0.43287" y="0.141531" />
+                                <point x="0.856481" y="0.559165" />
+                                <point x="0.861111" y="0.49652" />
+                                <point x="0.854167" y="0.431555" />
+                                <point x="0.43287" y="0.860789" />
+                                <point x="0.0925926" y="0.350348" />
+                                <point x="0.12963" y="0.49652" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.438178" hotspotY="0.496746" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0038.png">
+                            <collision-poly>
+                                <point x="0.201735" y="0.715835" />
+                                <point x="0.438178" y="0.16269" />
+                                <point x="0.850325" y="0.54013" />
+                                <point x="0.839479" y="0.496746" />
+                                <point x="0.832972" y="0.436009" />
+                                <point x="0.438178" y="0.869848" />
+                                <point x="0.0780911" y="0.401302" />
+                                <point x="0.156182" y="0.496746" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.440501" hotspotY="0.495833" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0039.png">
+                            <collision-poly>
+                                <point x="0.248434" y="0.741667" />
+                                <point x="0.440501" y="0.175" />
+                                <point x="0.872651" y="0.502083" />
+                                <point x="0.866388" y="0.495833" />
+                                <point x="0.983299" y="0.6" />
+                                <point x="0.440501" y="0.960417" />
+                                <point x="0.0480167" y="0.45" />
+                                <point x="0.129436" y="0.495833" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.441237" hotspotY="0.494845" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 2\0040.png">
+                            <collision-poly>
+                                <point x="0.00412371" y="0.490722" />
+                                <point x="0.441237" y="0.134021" />
+                                <point x="0.91134" y="0.457732" />
+                                <point x="0.997938" y="0.494845" />
+                                <point x="0.954639" y="0.575258" />
+                                <point x="0.441237" y="0.973196" />
+                                <point x="0.00206186" y="0.501031" />
+                                <point x="0.00206186" y="0.494845" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Explosion2" sid="39">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="40" speed="20">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Explosion3" sid="41">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="64" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="42" speed="15">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="HealthBar" sid="43">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="44">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+            <object-type name="HealthBG" sid="45">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="46">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="616271991162996">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+            <object-type name="Scroller" sid="47">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="48">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="49" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.513514" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SpikeyEnemy" sid="50">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="51">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="52">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="40" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="53" speed="10">
+                        <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0001.png">
+                            <collision-poly>
+                                <point x="0" y="0.11503" />
+                                <point x="0.510638" y="0" />
+                                <point x="1" y="0.11503" />
+                                <point x="1" y="0.488552" />
+                                <point x="1" y="0.88075" />
+                                <point x="0.510638" y="1" />
+                                <point x="0" y="0.88075" />
+                                <point x="0" y="0.488552" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500978" hotspotY="0.501057" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0002.png">
+                            <collision-poly>
+                                <point x="0" y="0.115273" />
+                                <point x="0.530333" y="0" />
+                                <point x="1" y="0.115273" />
+                                <point x="1" y="0.489585" />
+                                <point x="1" y="0.882612" />
+                                <point x="0.530333" y="1" />
+                                <point x="0" y="0.882612" />
+                                <point x="0" y="0.489585" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.525355" hotspotY="0.504255" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0003.png">
+                            <collision-poly>
+                                <point x="0" y="0.116009" />
+                                <point x="0.549696" y="0" />
+                                <point x="1" y="0.116009" />
+                                <point x="1" y="0.49271" />
+                                <point x="1" y="0.888246" />
+                                <point x="0.549696" y="1" />
+                                <point x="0" y="0.888246" />
+                                <point x="0" y="0.49271" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50108" hotspotY="0.501075" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0004.png">
+                            <collision-poly>
+                                <point x="0" y="0.117257" />
+                                <point x="0.568035" y="0" />
+                                <point x="1" y="0.117257" />
+                                <point x="1" y="0.498008" />
+                                <point x="1" y="0.897797" />
+                                <point x="0.568035" y="1" />
+                                <point x="0" y="0.897797" />
+                                <point x="0" y="0.498008" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501094" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0005.png">
+                            <collision-poly>
+                                <point x="0" y="0.117121" />
+                                <point x="0.582938" y="0" />
+                                <point x="1" y="0.117121" />
+                                <point x="1" y="0.504537" />
+                                <point x="1" y="0.911325" />
+                                <point x="0.582938" y="1" />
+                                <point x="0" y="0.911325" />
+                                <point x="0" y="0.504537" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0006.png">
+                            <collision-poly>
+                                <point x="0" y="0.118943" />
+                                <point x="0.563131" y="0" />
+                                <point x="1" y="0.118943" />
+                                <point x="1" y="0.512386" />
+                                <point x="1" y="0.925501" />
+                                <point x="0.563131" y="1" />
+                                <point x="0" y="0.925501" />
+                                <point x="0" y="0.512386" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501312" hotspotY="0.501139" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0007.png">
+                            <collision-poly>
+                                <point x="0" y="0.119645" />
+                                <point x="0.496063" y="0" />
+                                <point x="1" y="0.119645" />
+                                <point x="1" y="0.522947" />
+                                <point x="1" y="0.946414" />
+                                <point x="0.496063" y="1" />
+                                <point x="0" y="0.946414" />
+                                <point x="0" y="0.522947" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501326" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0008.png">
+                            <collision-poly>
+                                <point x="0" y="0.12215" />
+                                <point x="0.456233" y="0" />
+                                <point x="1" y="0.12215" />
+                                <point x="1" y="0.533892" />
+                                <point x="1" y="0.966222" />
+                                <point x="0.456233" y="1" />
+                                <point x="0" y="0.966222" />
+                                <point x="0" y="0.533892" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501193" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0009.png">
+                            <collision-poly>
+                                <point x="0" y="0.12297" />
+                                <point x="0.469849" y="0" />
+                                <point x="1" y="0.12297" />
+                                <point x="1" y="0.545522" />
+                                <point x="1" y="0.989202" />
+                                <point x="0.469849" y="1" />
+                                <point x="0" y="0.989202" />
+                                <point x="0" y="0.545522" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501222" hotspotY="0.501222" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0010.png">
+                            <collision-poly>
+                                <point x="0" y="0.125976" />
+                                <point x="0.484108" y="0" />
+                                <point x="1" y="0.125976" />
+                                <point x="1" y="0.55886" />
+                                <point x="1" y="1" />
+                                <point x="0.484108" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.55886" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501217" hotspotY="0.501253" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0011.png">
+                            <collision-poly>
+                                <point x="0" y="0.126627" />
+                                <point x="0.498783" y="0" />
+                                <point x="1" y="0.126627" />
+                                <point x="1" y="0.57036" />
+                                <point x="1" y="1" />
+                                <point x="0.498783" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.57036" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0012.png">
+                            <collision-poly>
+                                <point x="0" y="0.12764" />
+                                <point x="0.514925" y="0" />
+                                <point x="1" y="0.12764" />
+                                <point x="1" y="0.583953" />
+                                <point x="1" y="1" />
+                                <point x="0.514925" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.583953" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501319" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0013.png">
+                            <collision-poly>
+                                <point x="0" y="0.128033" />
+                                <point x="0.528646" y="0" />
+                                <point x="1" y="0.128033" />
+                                <point x="1" y="0.595181" />
+                                <point x="1" y="1" />
+                                <point x="0.528646" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.595181" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501401" hotspotY="0.501285" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0014.png">
+                            <collision-poly>
+                                <point x="0" y="0.122171" />
+                                <point x="0.543417" y="0" />
+                                <point x="1" y="0.122171" />
+                                <point x="1" y="0.57731" />
+                                <point x="1" y="1" />
+                                <point x="0.543417" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.57731" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0015.png">
+                            <collision-poly>
+                                <point x="0" y="0.116311" />
+                                <point x="0.483784" y="0" />
+                                <point x="1" y="0.116311" />
+                                <point x="1" y="0.558934" />
+                                <point x="1" y="1" />
+                                <point x="0.483784" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.558934" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0016.png">
+                            <collision-poly>
+                                <point x="0" y="0.113474" />
+                                <point x="0.453125" y="0" />
+                                <point x="1" y="0.113474" />
+                                <point x="1" y="0.545301" />
+                                <point x="1" y="0.998721" />
+                                <point x="0.453125" y="1" />
+                                <point x="0" y="0.998721" />
+                                <point x="0" y="0.545301" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501193" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0017.png">
+                            <collision-poly>
+                                <point x="0.226244" y="0.801909" />
+                                <point x="0.454751" y="0.264916" />
+                                <point x="0.925339" y="0.546539" />
+                                <point x="0.918552" y="0.541766" />
+                                <point x="0.954751" y="0.568019" />
+                                <point x="0.454751" y="0.701671" />
+                                <point x="0.0701357" y="0.446301" />
+                                <point x="0.242081" y="0.541766" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0018.png">
+                            <collision-poly>
+                                <point x="0.296451" y="0.830986" />
+                                <point x="0.469729" y="0.260563" />
+                                <point x="0.977035" y="0.532864" />
+                                <point x="0.914405" y="0.539906" />
+                                <point x="0.469729" y="0.690141" />
+                                <point x="0.0960334" y="0.460094" />
+                                <point x="0.273486" y="0.532864" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0019.png">
+                            <collision-poly>
+                                <point x="0.366534" y="0.874419" />
+                                <point x="0.486056" y="0.223256" />
+                                <point x="0.940239" y="0.483721" />
+                                <point x="0.818725" y="0.525581" />
+                                <point x="0.896414" y="0.516279" />
+                                <point x="0.486056" y="0.695349" />
+                                <point x="0.113546" y="0.472093" />
+                                <point x="0.298805" y="0.525581" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500971" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0020.png">
+                            <collision-poly>
+                                <point x="0.0349515" y="0.449074" />
+                                <point x="0.504854" y="0.118056" />
+                                <point x="0.959223" y="0.467593" />
+                                <point x="0.749515" y="0.523148" />
+                                <point x="0.891262" y="0.497685" />
+                                <point x="0.504854" y="0.791667" />
+                                <point x="0.126214" y="0.488426" />
+                                <point x="0.283495" y="0.523148" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500971" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0021.png">
+                            <collision-poly>
+                                <point x="0.0660194" y="0.462963" />
+                                <point x="0.524272" y="0.0555556" />
+                                <point x="0.990291" y="0.453704" />
+                                <point x="0.716505" y="0.523148" />
+                                <point x="0.895146" y="0.479167" />
+                                <point x="0.524272" y="0.893519" />
+                                <point x="0.132039" y="0.50463" />
+                                <point x="0.246602" y="0.523148" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501166" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0022.png">
+                            <collision-poly>
+                                <point x="0.0873016" y="0.480186" />
+                                <point x="0.543651" y="0.188811" />
+                                <point x="0.642857" y="0.899767" />
+                                <point x="0.706349" y="0.526807" />
+                                <point x="0.90873" y="0.4662" />
+                                <point x="0.543651" y="0.745921" />
+                                <point x="0.130952" y="0.522144" />
+                                <point x="0.168651" y="0.526807" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50104" hotspotY="0.501182" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0023.png">
+                            <collision-poly>
+                                <point x="0.0997921" y="0.50591" />
+                                <point x="0.561331" y="0.250591" />
+                                <point x="0.715177" y="0.855792" />
+                                <point x="0.731809" y="0.534279" />
+                                <point x="0.927235" y="0.453901" />
+                                <point x="0.561331" y="0.695035" />
+                                <point x="0.114345" y="0.546099" />
+                                <point x="0.002079" y="0.534279" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501193" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0024.png">
+                            <collision-poly>
+                                <point x="0.0986547" y="0.534606" />
+                                <point x="0.578475" y="0.267303" />
+                                <point x="0.786996" y="0.823389" />
+                                <point x="0.764574" y="0.544153" />
+                                <point x="0.952915" y="0.441527" />
+                                <point x="0.578475" y="0.706444" />
+                                <point x="0.0784753" y="0.575179" />
+                                <point x="0.0695067" y="0.544153" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501222" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0025.png">
+                            <collision-poly>
+                                <point x="0.0875" y="0.574572" />
+                                <point x="0.595" y="0.273839" />
+                                <point x="0.8625" y="0.809291" />
+                                <point x="0.8025" y="0.557457" />
+                                <point x="0.985" y="0.425428" />
+                                <point x="0.595" y="0.723716" />
+                                <point x="0.015" y="0.611247" />
+                                <point x="0.1275" y="0.557457" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501326" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0026.png">
+                            <collision-poly>
+                                <point x="0.0530504" y="0.625628" />
+                                <point x="0.554377" y="0.281407" />
+                                <point x="0.867374" y="0.80402" />
+                                <point x="0.771883" y="0.572864" />
+                                <point x="0.779841" y="0.258794" />
+                                <point x="0.554377" y="0.741206" />
+                                <point x="0.275862" y="0.309045" />
+                                <point x="0.153846" y="0.572864" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0027.png">
+                            <collision-poly>
+                                <point x="0.187151" y="0.852332" />
+                                <point x="0.49162" y="0.290155" />
+                                <point x="0.846369" y="0.805699" />
+                                <point x="0.72067" y="0.590674" />
+                                <point x="0.743017" y="0.279793" />
+                                <point x="0.49162" y="0.764249" />
+                                <point x="0.178771" y="0.336788" />
+                                <point x="0.162011" y="0.590674" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0028.png">
+                            <collision-poly>
+                                <point x="0.212435" y="0.862434" />
+                                <point x="0.505181" y="0.298942" />
+                                <point x="0.852332" y="0.806878" />
+                                <point x="0.720207" y="0.60582" />
+                                <point x="0.746114" y="0.296296" />
+                                <point x="0.505181" y="0.783069" />
+                                <point x="0.199482" y="0.362434" />
+                                <point x="0.259067" y="0.60582" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0029.png">
+                            <collision-poly>
+                                <point x="0.230198" y="0.835052" />
+                                <point x="0.517327" y="0.293814" />
+                                <point x="0.861386" y="0.775773" />
+                                <point x="0.722772" y="0.592784" />
+                                <point x="0.75" y="0.293814" />
+                                <point x="0.517327" y="0.768041" />
+                                <point x="0.215347" y="0.365979" />
+                                <point x="0.282178" y="0.592784" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501259" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0030.png">
+                            <collision-poly>
+                                <point x="0.252427" y="0.816121" />
+                                <point x="0.533981" y="0.287154" />
+                                <point x="0.878641" y="0.75063" />
+                                <point x="0.73301" y="0.579345" />
+                                <point x="0.759709" y="0.284635" />
+                                <point x="0.533981" y="0.75063" />
+                                <point x="0.228155" y="0.367758" />
+                                <point x="0.305825" y="0.579345" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501222" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0031.png">
+                            <collision-poly>
+                                <point x="0.26699" y="0.797066" />
+                                <point x="0.548544" y="0.283619" />
+                                <point x="0.895631" y="0.731051" />
+                                <point x="0.747573" y="0.567237" />
+                                <point x="0.771845" y="0.278729" />
+                                <point x="0.548544" y="0.731051" />
+                                <point x="0.237864" y="0.366748" />
+                                <point x="0.320388" y="0.567237" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0032.png">
+                            <collision-poly>
+                                <point x="0.28" y="0.787081" />
+                                <point x="0.5625" y="0.277512" />
+                                <point x="0.92" y="0.715311" />
+                                <point x="0.7675" y="0.555024" />
+                                <point x="0.785" y="0.26555" />
+                                <point x="0.5625" y="0.715311" />
+                                <point x="0.2425" y="0.358852" />
+                                <point x="0.3275" y="0.555024" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0033.png">
+                            <collision-poly>
+                                <point x="0.292105" y="0.776744" />
+                                <point x="0.578947" y="0.272093" />
+                                <point x="0.947368" y="0.704651" />
+                                <point x="0.813158" y="0.54186" />
+                                <point x="0.802632" y="0.251163" />
+                                <point x="0.578947" y="0.697674" />
+                                <point x="0.244737" y="0.348837" />
+                                <point x="0.331579" y="0.54186" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501305" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0034.png">
+                            <collision-poly>
+                                <point x="0.27154" y="0.775" />
+                                <point x="0.54047" y="0.268182" />
+                                <point x="0.89295" y="0.702273" />
+                                <point x="0.856397" y="0.531818" />
+                                <point x="0.746736" y="0.234091" />
+                                <point x="0.54047" y="0.686364" />
+                                <point x="0.214099" y="0.338636" />
+                                <point x="0.292428" y="0.531818" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501114" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0035.png">
+                            <collision-poly>
+                                <point x="0.232323" y="0.777283" />
+                                <point x="0.472222" y="0.262806" />
+                                <point x="0.959596" y="0.55902" />
+                                <point x="0.866162" y="0.521158" />
+                                <point x="0.65404" y="0.213808" />
+                                <point x="0.472222" y="0.672606" />
+                                <point x="0.0858586" y="0.394209" />
+                                <point x="0.234848" y="0.521158" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501094" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0036.png">
+                            <collision-poly>
+                                <point x="0.236842" y="0.785558" />
+                                <point x="0.442584" y="0.260394" />
+                                <point x="0.933014" y="0.525164" />
+                                <point x="0.901914" y="0.514223" />
+                                <point x="0.980861" y="0.547046" />
+                                <point x="0.442584" y="0.660832" />
+                                <point x="0.0478469" y="0.415755" />
+                                <point x="0.217703" y="0.514223" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0037.png">
+                            <collision-poly>
+                                <point x="0.296537" y="0.799569" />
+                                <point x="0.45671" y="0.230603" />
+                                <point x="0.924242" y="0.493534" />
+                                <point x="0.969697" y="0.506465" />
+                                <point x="0.926407" y="0.521552" />
+                                <point x="0.45671" y="0.653017" />
+                                <point x="0.0779221" y="0.431034" />
+                                <point x="0.251082" y="0.506465" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501014" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0038.png">
+                            <collision-poly>
+                                <point x="0.35497" y="0.825532" />
+                                <point x="0.472617" y="0.185106" />
+                                <point x="0.926978" y="0.47234" />
+                                <point x="0.876268" y="0.502128" />
+                                <point x="0.89858" y="0.502128" />
+                                <point x="0.472617" y="0.67234" />
+                                <point x="0.10142" y="0.444681" />
+                                <point x="0.281947" y="0.502128" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500978" hotspotY="0.501057" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0039.png">
+                            <collision-poly>
+                                <point x="0.0136986" y="0.427061" />
+                                <point x="0.491194" y="0.103594" />
+                                <point x="0.943249" y="0.454545" />
+                                <point x="0.778865" y="0.498943" />
+                                <point x="0.886497" y="0.48203" />
+                                <point x="0.491194" y="0.742072" />
+                                <point x="0.117417" y="0.458774" />
+                                <point x="0.293542" y="0.498943" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\mine\0040.png">
+                            <collision-poly>
+                                <point x="0.0483559" y="0.436709" />
+                                <point x="0.510638" y="0.056962" />
+                                <point x="0.970986" y="0.438819" />
+                                <point x="0.729207" y="0.49789" />
+                                <point x="0.887814" y="0.466245" />
+                                <point x="0.510638" y="0.911392" />
+                                <point x="0.12766" y="0.472574" />
+                                <point x="0.270793" y="0.49789" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PlayerRocket" sid="54">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="55">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="56">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="57" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.0292969" y="0.0669643" />
+                                <point x="0.5" y="0.214286" />
+                                <point x="0.84375" y="0.357143" />
+                                <point x="0.90625" y="0.5" />
+                                <point x="0.84375" y="0.642857" />
+                                <point x="0.5" y="0.785714" />
+                                <point x="0.0332031" y="0.924107" />
+                                <point x="0.09375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ScoreText" sid="58">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="59">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="371083325309049">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="RocketPowerup" sid="60">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="61">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                    <behavior-type name="Rotate" sid="62">
+                        <behavior id="Rotate" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="63" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.369141" y="0.267578" />
+                                <point x="0.5" y="0.0625" />
+                                <point x="0.619141" y="0.251953" />
+                                <point x="0.625" y="0.5" />
+                                <point x="0.693359" y="0.931641" />
+                                <point x="0.314453" y="0.931641" />
+                                <point x="0.375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RocketsDisplay" sid="64">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="65">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="931515004781220">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+            <object-type name="PlayerThrust" sid="66">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="728019120950348">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="6003657554752701">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="67" speed="12">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BugEnemy" sid="68">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Health" sid="69" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="70">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="20" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="71" speed="35">
+                        <frame duration="1" hotspotX="0.404858" hotspotY="0.47929" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0001.png">
+                            <collision-poly>
+                                <point x="0" y="0.0286755" />
+                                <point x="0.404858" y="0" />
+                                <point x="1" y="0.0286755" />
+                                <point x="1" y="0.47929" />
+                                <point x="1" y="0.779699" />
+                                <point x="0.404858" y="0.984524" />
+                                <point x="0" y="0.779699" />
+                                <point x="0" y="0.47929" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.410788" hotspotY="0.47929" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0002.png">
+                            <collision-poly>
+                                <point x="0" y="0.0286755" />
+                                <point x="0.410788" y="0" />
+                                <point x="1" y="0.0286755" />
+                                <point x="1" y="0.47929" />
+                                <point x="1" y="0.779699" />
+                                <point x="0.410788" y="0.984524" />
+                                <point x="0" y="0.779699" />
+                                <point x="0" y="0.47929" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.415584" hotspotY="0.478261" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0003.png">
+                            <collision-poly>
+                                <point x="0" y="0.0267559" />
+                                <point x="0.415584" y="0" />
+                                <point x="1" y="0.0267559" />
+                                <point x="1" y="0.478261" />
+                                <point x="1" y="0.779264" />
+                                <point x="0.415584" y="0.984494" />
+                                <point x="0" y="0.779264" />
+                                <point x="0" y="0.478261" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.415888" hotspotY="0.477228" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0004.png">
+                            <collision-poly>
+                                <point x="0" y="0.0248287" />
+                                <point x="0.415888" y="0" />
+                                <point x="1" y="0.0248287" />
+                                <point x="1" y="0.477228" />
+                                <point x="1" y="0.778827" />
+                                <point x="0.415888" y="0.984463" />
+                                <point x="0" y="0.778827" />
+                                <point x="0" y="0.477228" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.385366" hotspotY="0.475149" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0005.png">
+                            <collision-poly>
+                                <point x="0" y="0.0209512" />
+                                <point x="0.385366" y="0" />
+                                <point x="1" y="0.0209512" />
+                                <point x="1" y="0.475149" />
+                                <point x="1" y="0.777947" />
+                                <point x="0.385366" y="0.984401" />
+                                <point x="0" y="0.777947" />
+                                <point x="0" y="0.475149" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.353774" hotspotY="0.473054" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0006.png">
+                            <collision-poly>
+                                <point x="0" y="0.0170429" />
+                                <point x="0.353774" y="0" />
+                                <point x="1" y="0.0170429" />
+                                <point x="1" y="0.473054" />
+                                <point x="1" y="0.777061" />
+                                <point x="0.353774" y="0.984339" />
+                                <point x="0" y="0.777061" />
+                                <point x="0" y="0.473054" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.364035" hotspotY="0.474104" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0007.png">
+                            <collision-poly>
+                                <point x="0" y="0.0190009" />
+                                <point x="0.364035" y="0" />
+                                <point x="1" y="0.0190009" />
+                                <point x="1" y="0.474104" />
+                                <point x="1" y="0.777505" />
+                                <point x="0.364035" y="0.98437" />
+                                <point x="0" y="0.777505" />
+                                <point x="0" y="0.474104" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.375" hotspotY="0.47619" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0008.png">
+                            <collision-poly>
+                                <point x="0" y="0.0228938" />
+                                <point x="0.375" y="0" />
+                                <point x="1" y="0.0228938" />
+                                <point x="1" y="0.47619" />
+                                <point x="1" y="0.778388" />
+                                <point x="0.375" y="0.984432" />
+                                <point x="0" y="0.778388" />
+                                <point x="0" y="0.47619" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.388664" hotspotY="0.478261" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0009.png">
+                            <collision-poly>
+                                <point x="0" y="0.0267559" />
+                                <point x="0.388664" y="0" />
+                                <point x="1" y="0.0267559" />
+                                <point x="1" y="0.478261" />
+                                <point x="1" y="0.779264" />
+                                <point x="0.388664" y="0.984494" />
+                                <point x="0" y="0.779264" />
+                                <point x="0" y="0.478261" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.396" hotspotY="0.47929" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0010.png">
+                            <collision-poly>
+                                <point x="0" y="0.0286755" />
+                                <point x="0.396" y="0" />
+                                <point x="1" y="0.0286755" />
+                                <point x="1" y="0.47929" />
+                                <point x="1" y="0.779699" />
+                                <point x="0.396" y="0.984524" />
+                                <point x="0" y="0.779699" />
+                                <point x="0" y="0.47929" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.399194" hotspotY="0.47929" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0011.png">
+                            <collision-poly>
+                                <point x="0" y="0.0286755" />
+                                <point x="0.399194" y="0" />
+                                <point x="1" y="0.0286755" />
+                                <point x="1" y="0.47929" />
+                                <point x="1" y="0.779699" />
+                                <point x="0.399194" y="0.984524" />
+                                <point x="0" y="0.779699" />
+                                <point x="0" y="0.47929" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.404959" hotspotY="0.47929" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0012.png">
+                            <collision-poly>
+                                <point x="0" y="0.0286755" />
+                                <point x="0.404959" y="0" />
+                                <point x="1" y="0.0286755" />
+                                <point x="1" y="0.47929" />
+                                <point x="1" y="0.779699" />
+                                <point x="0.404959" y="0.984524" />
+                                <point x="0" y="0.779699" />
+                                <point x="0" y="0.47929" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.408696" hotspotY="0.478261" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0013.png">
+                            <collision-poly>
+                                <point x="0" y="0.0267559" />
+                                <point x="0.408696" y="0" />
+                                <point x="1" y="0.0267559" />
+                                <point x="1" y="0.478261" />
+                                <point x="1" y="0.779264" />
+                                <point x="0.408696" y="0.984494" />
+                                <point x="0" y="0.779264" />
+                                <point x="0" y="0.478261" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.408451" hotspotY="0.47619" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0014.png">
+                            <collision-poly>
+                                <point x="0" y="0.0228938" />
+                                <point x="0.408451" y="0" />
+                                <point x="1" y="0.0228938" />
+                                <point x="1" y="0.47619" />
+                                <point x="1" y="0.778388" />
+                                <point x="0.408451" y="0.984432" />
+                                <point x="0" y="0.778388" />
+                                <point x="0" y="0.47619" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.373786" hotspotY="0.475149" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0015.png">
+                            <collision-poly>
+                                <point x="0" y="0.0209512" />
+                                <point x="0.373786" y="0" />
+                                <point x="1" y="0.0209512" />
+                                <point x="1" y="0.475149" />
+                                <point x="1" y="0.777947" />
+                                <point x="0.373786" y="0.984401" />
+                                <point x="0" y="0.777947" />
+                                <point x="0" y="0.475149" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.345794" hotspotY="0.473054" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0016.png">
+                            <collision-poly>
+                                <point x="0" y="0.0170429" />
+                                <point x="0.345794" y="0" />
+                                <point x="1" y="0.0170429" />
+                                <point x="1" y="0.473054" />
+                                <point x="1" y="0.777061" />
+                                <point x="0.345794" y="0.984339" />
+                                <point x="0" y="0.777061" />
+                                <point x="0" y="0.473054" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.359307" hotspotY="0.473161" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0017.png">
+                            <collision-poly>
+                                <point x="0.0692641" y="0.757455" />
+                                <point x="0.359307" y="0.137177" />
+                                <point x="0.900433" y="0.642147" />
+                                <point x="0.865801" y="0.473161" />
+                                <point x="0.761905" y="0.240557" />
+                                <point x="0.359307" y="0.600398" />
+                                <point x="0.0995671" y="0.17495" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.37037" hotspotY="0.47619" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0018.png">
+                            <collision-poly>
+                                <point x="0.0576132" y="0.742063" />
+                                <point x="0.37037" y="0.140873" />
+                                <point x="0.909465" y="0.632937" />
+                                <point x="0.880658" y="0.47619" />
+                                <point x="0.777778" y="0.255952" />
+                                <point x="0.37037" y="0.603175" />
+                                <point x="0.0987654" y="0.190476" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.384" hotspotY="0.477318" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0019.png">
+                            <collision-poly>
+                                <point x="0.056" y="0.729783" />
+                                <point x="0.384" y="0.143984" />
+                                <point x="0.924" y="0.625247" />
+                                <point x="0.896" y="0.477318" />
+                                <point x="0.796" y="0.266272" />
+                                <point x="0.384" y="0.81854" />
+                                <point x="0.1" y="0.203156" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.389764" hotspotY="0.478346" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\enemy ship 1\0020.png">
+                            <collision-poly>
+                                <point x="0.0393701" y="0.716535" />
+                                <point x="0.389764" y="0.145669" />
+                                <point x="0.929134" y="0.622047" />
+                                <point x="0.897638" y="0.478346" />
+                                <point x="0.80315" y="0.271654" />
+                                <point x="0.389764" y="0.602362" />
+                                <point x="0.0944882" y="0.212598" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="EnemyLaser" sid="72">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="73">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="74">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="75" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.192308" y="0.384615" />
+                                <point x="0.5" y="0.192308" />
+                                <point x="0.846154" y="0.307692" />
+                                <point x="0.923077" y="0.5" />
+                                <point x="0.826923" y="0.653846" />
+                                <point x="0.5" y="0.807692" />
+                                <point x="0.211538" y="0.576923" />
+                                <point x="0.153846" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FighterEnemy" sid="76">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="created" sid="77" type="number" />
+                    <instance-variable name="originX" sid="78" type="number" />
+                    <instance-variable name="originY" sid="79" type="number" />
+                    <instance-variable name="myTimer" sid="80" type="number" />
+                    <instance-variable name="Health" sid="81" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="82">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="83" speed="10">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.54" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263">
+                            <collision-poly>
+                                <point x="0.0075" y="0.186842" />
+                                <point x="0.5" y="0.0105263" />
+                                <point x="0.9725" y="0.192105" />
+                                <point x="0.9875" y="0.560526" />
+                                <point x="0.5025" y="1" />
+                                <point x="0.0025" y="0.576316" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PlayerThrust2" sid="5353664145637027">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="9482715383884262">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="8721302836644576">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9932044346561058" speed="12">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bullet3" sid="7693321322029047">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="9211781001932798">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="8568884674257303">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4453065292339084" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.518519">
+                            <collision-poly>
+                                <point x="0.5" y="0.407407" />
+                                <point x="0.826923" y="0.333333" />
+                                <point x="0.923077" y="0.481481" />
+                                <point x="0.826923" y="0.666667" />
+                                <point x="0.5" y="0.555556" />
+                                <point x="0.461538" y="0.481481" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Keyboard" sid="84">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Touch" sid="86">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="RocketButton" sid="87">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="88">
+                    <behavior id="Anchor" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="89">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="726267046045466">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="90" speed="5">
+                    <frame duration="1" hotspotX="0.474227" hotspotY="0.526316" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Button.png">
+                        <collision-poly>
+                            <point x="0.230705" y="0.331434" />
+                            <point x="0.479282" y="0" />
+                            <point x="0.727859" y="0.331434" />
+                            <point x="0.82729" y="0.515687" />
+                            <point x="1" y="1" />
+                            <point x="0.479282" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.131274" y="0.515687" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="91">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="SafariTitle" sid="92">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Browser" sid="93">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="ship" sid="2593821031502633">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="7596851847509659">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="20" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3931557821792801" speed="6">
+                    <frame duration="1" hotspotX="0.500703" hotspotY="0.502538" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0001.png">
+                        <collision-poly>
+                            <point x="0.170729" y="1" />
+                            <point x="0.503059" y="0.334035" />
+                            <point x="0.85438" y="0.949115" />
+                            <point x="0.710054" y="0.614832" />
+                            <point x="0.966423" y="1" />
+                            <point x="0.503059" y="1" />
+                            <point x="0.0131093" y="1" />
+                            <point x="0.278974" y="0.614832" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500703" hotspotY="0.502439" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0002.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0.454482" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0.436621" />
+                            <point x="1" y="0" />
+                            <point x="0.454482" y="1" />
+                            <point x="0" y="0.0966786" />
+                            <point x="0" y="0.436621" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500707" hotspotY="0.502222" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0003.png">
+                        <collision-poly>
+                            <point x="0.265912" y="0.755556" />
+                            <point x="0.496464" y="0.448889" />
+                            <point x="0.779349" y="0.591111" />
+                            <point x="0.994342" y="0.546667" />
+                            <point x="0.820368" y="0.631111" />
+                            <point x="0.496464" y="0.866667" />
+                            <point x="0.104668" y="0.844444" />
+                            <point x="0.318246" y="0.546667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500713" hotspotY="0.502041" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0004.png">
+                        <collision-poly>
+                            <point x="0.170151" y="1" />
+                            <point x="0.485885" y="0.446531" />
+                            <point x="0.873289" y="0.76" />
+                            <point x="1" y="0.662041" />
+                            <point x="0.929462" y="0.848163" />
+                            <point x="0.485885" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.241821" y="0.662041" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500717" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0005.png">
+                        <collision-poly>
+                            <point x="0.175852" y="0.996032" />
+                            <point x="0.476468" y="0.493926" />
+                            <point x="0.902832" y="0.625121" />
+                            <point x="0.951952" y="0.686346" />
+                            <point x="0.900867" y="0.738824" />
+                            <point x="0.476468" y="0.996032" />
+                            <point x="0.00143472" y="0.996032" />
+                            <point x="0.207289" y="0.686346" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502008" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0006.png">
+                        <collision-poly>
+                            <point x="0.181157" y="0.995984" />
+                            <point x="0.475172" y="0.497992" />
+                            <point x="0.919154" y="0.558233" />
+                            <point x="0.897448" y="0.687321" />
+                            <point x="0.893502" y="0.704532" />
+                            <point x="0.475172" y="0.995984" />
+                            <point x="0.00143266" y="0.995984" />
+                            <point x="0.196943" y="0.687321" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0007.png">
+                        <collision-poly>
+                            <point x="0.183324" y="1" />
+                            <point x="0.479163" y="0.486396" />
+                            <point x="0.914105" y="0.576757" />
+                            <point x="0.921942" y="0.685191" />
+                            <point x="0.896473" y="0.712299" />
+                            <point x="0.479163" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.206834" y="0.685191" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0008.png">
+                        <collision-poly>
+                            <point x="0.186718" y="1" />
+                            <point x="0.486105" y="0.456667" />
+                            <point x="0.895589" y="0.656667" />
+                            <point x="0.996028" y="0.676667" />
+                            <point x="0.90911" y="0.766667" />
+                            <point x="0.486105" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.22728" y="0.676667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502392" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0009.png">
+                        <collision-poly>
+                            <point x="0.182979" y="1" />
+                            <point x="0.494271" y="0.403828" />
+                            <point x="0.876223" y="0.771292" />
+                            <point x="1" y="0.656459" />
+                            <point x="0.931607" y="0.874641" />
+                            <point x="0.494271" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.253641" y="0.656459" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500703" hotspotY="0.502538" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0010.png">
+                        <collision-poly>
+                            <point x="0.166438" y="1" />
+                            <point x="0.508264" y="0.312247" />
+                            <point x="0.84819" y="1" />
+                            <point x="0.720955" y="0.604447" />
+                            <point x="0.98682" y="1" />
+                            <point x="0.508264" y="1" />
+                            <point x="0.031607" y="1" />
+                            <point x="0.289875" y="0.604447" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500703" hotspotY="0.50237" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0011.png">
+                        <collision-poly>
+                            <point x="0.240506" y="0.635071" />
+                            <point x="0.506329" y="0.436019" />
+                            <point x="0.746835" y="0.720379" />
+                            <point x="0.66948" y="0.535545" />
+                            <point x="0.877637" y="0.791469" />
+                            <point x="0.506329" y="0.876777" />
+                            <point x="0.168776" y="0.677725" />
+                            <point x="0.350211" y="0.535545" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500707" hotspotY="0.502203" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0012.png">
+                        <collision-poly>
+                            <point x="0.226308" y="0.585903" />
+                            <point x="0.510608" y="0.453745" />
+                            <point x="0.739745" y="0.757709" />
+                            <point x="0.684583" y="0.546256" />
+                            <point x="0.906648" y="0.854626" />
+                            <point x="0.510608" y="0.863436" />
+                            <point x="0.188119" y="0.625551" />
+                            <point x="0.0268741" y="0.546256" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502075" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0013.png">
+                        <collision-poly>
+                            <point x="0.514245" y="0.473029" />
+                            <point x="0.733618" y="0.788382" />
+                            <point x="0.700855" y="0.556017" />
+                            <point x="0.937322" y="0.917012" />
+                            <point x="0.514245" y="0.858921" />
+                            <point x="0.203704" y="0.589212" />
+                            <point x="0.150997" y="0.556017" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500717" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0014.png">
+                        <collision-poly>
+                            <point x="0.195122" y="0.504" />
+                            <point x="0.516499" y="0.48" />
+                            <point x="0.730273" y="0.804" />
+                            <point x="0.711621" y="0.56" />
+                            <point x="0.961263" y="0.96" />
+                            <point x="0.516499" y="0.856" />
+                            <point x="0.210904" y="0.572" />
+                            <point x="0.199426" y="0.56" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500717" hotspotY="0.501976" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0015.png">
+                        <collision-poly>
+                            <point x="0.190818" y="0.494071" />
+                            <point x="0.516499" y="0.482213" />
+                            <point x="0.727403" y="0.810277" />
+                            <point x="0.715925" y="0.561265" />
+                            <point x="0.968436" y="0.976285" />
+                            <point x="0.516499" y="0.853755" />
+                            <point x="0.215208" y="0.561265" />
+                            <point x="0.212339" y="0.561265" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500717" hotspotY="0.502008" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0016.png">
+                        <collision-poly>
+                            <point x="0.197991" y="0.514056" />
+                            <point x="0.515065" y="0.477912" />
+                            <point x="0.730273" y="0.799197" />
+                            <point x="0.708752" y="0.558233" />
+                            <point x="0.956958" y="0.951807" />
+                            <point x="0.515065" y="0.851406" />
+                            <point x="0.209469" y="0.570281" />
+                            <point x="0.189383" y="0.558233" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500709" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0017.png">
+                        <collision-poly>
+                            <point x="0.217021" y="0.559322" />
+                            <point x="0.512057" y="0.466102" />
+                            <point x="0.734752" y="0.775424" />
+                            <point x="0.692199" y="0.550847" />
+                            <point x="0.921986" y="0.885593" />
+                            <point x="0.512057" y="0.855932" />
+                            <point x="0.195745" y="0.605932" />
+                            <point x="0.103546" y="0.550847" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500705" hotspotY="0.502304" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0018.png">
+                        <collision-poly>
+                            <point x="0.235543" y="0.617512" />
+                            <point x="0.507757" y="0.442396" />
+                            <point x="0.744711" y="0.732719" />
+                            <point x="0.675599" y="0.539171" />
+                            <point x="0.887165" y="0.81106" />
+                            <point x="0.507757" y="0.870968" />
+                            <point x="0.174894" y="0.658986" />
+                            <point x="0.352609" y="0.539171" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500703" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0019.png">
+                        <collision-poly>
+                            <point x="0.246132" y="0.663366" />
+                            <point x="0.503516" y="0.425743" />
+                            <point x="0.751055" y="0.69802" />
+                            <point x="0.662447" y="0.529703" />
+                            <point x="0.862166" y="0.752475" />
+                            <point x="0.503516" y="0.886139" />
+                            <point x="0.156118" y="0.712871" />
+                            <point x="0.343179" y="0.529703" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502538" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\Loading\WARP0020.png">
+                        <collision-poly>
+                            <point x="0.249296" y="0.680203" />
+                            <point x="0.502817" y="0.42132" />
+                            <point x="0.756338" y="0.680203" />
+                            <point x="0.659155" y="0.527919" />
+                            <point x="0.856338" y="0.736041" />
+                            <point x="0.502817" y="0.888325" />
+                            <point x="0.149296" y="0.736041" />
+                            <point x="0.339437" y="0.527919" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="boss" sid="2134157580023499">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="stateTimer" sid="5619401577574085" type="number" />
+                <instance-variable name="state" sid="2531548610627586" type="string" />
+                <instance-variable name="health" sid="4013336842446251" type="number" />
+                <instance-variable name="initialHealth" sid="8684369339087784" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="8856902733031725">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="5416885534132234">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="3207074821829257">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="1383632669994086">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="open" pingpong="0" repeatcount="0" repeatto="0" sid="7051176718714713" speed="5">
+                    <frame duration="2" hotspotX="0.501992" hotspotY="0.502283" original-source="C:\Users\DYRC1\Desktop\Micky\Star Fighter\4.png">
+                        <image-point name="hit" x="0.501992" y="0.780822" />
+                        <collision-poly>
+                            <point x="0.203187" y="0.232877" />
+                            <point x="0.498008" y="0.0547945" />
+                            <point x="0.800797" y="0.22831" />
+                            <point x="0.896414" y="0.497717" />
+                            <point x="0.7251" y="0.894977" />
+                            <point x="0.505976" y="1" />
+                            <point x="0.262948" y="0.876712" />
+                            <point x="0.10757" y="0.497717" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="2" hotspotX="0.501992" hotspotY="0.502242" original-source="C:\Users\DYRC1\Desktop\Micky\Star Fighter\3.png">
+                        <image-point name="hit" x="0.501992" y="0.780269" />
+                        <collision-poly>
+                            <point x="0.203187" y="0.2287" />
+                            <point x="0.498008" y="0.0538117" />
+                            <point x="0.800797" y="0.224215" />
+                            <point x="0.880478" y="0.497758" />
+                            <point x="0.739044" y="0.89686" />
+                            <point x="0.613546" y="0.982062" />
+                            <point x="0.59263" y="0.515696" />
+                            <point x="0.416335" y="0.524664" />
+                            <point x="0.430279" y="1" />
+                            <point x="0.318725" y="0.905829" />
+                            <point x="0.123506" y="0.497758" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="2" hotspotX="0.501992" hotspotY="0.5" original-source="C:\Users\DYRC1\Desktop\Micky\Star Fighter\2.png">
+                        <image-point name="hit" x="0.501992" y="0.778761" />
+                        <collision-poly>
+                            <point x="0.203187" y="0.225664" />
+                            <point x="0.498008" y="0.0530973" />
+                            <point x="0.800797" y="0.221239" />
+                            <point x="0.880478" y="0.5" />
+                            <point x="0.828685" y="0.792035" />
+                            <point x="0.685259" y="0.997787" />
+                            <point x="0.605578" y="0.601771" />
+                            <point x="0.406375" y="0.599558" />
+                            <point x="0.286853" y="0.981194" />
+                            <point x="0.183267" y="0.809734" />
+                            <point x="0.123506" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="2" hotspotX="0.501992" hotspotY="0.502283" original-source="C:\Users\DYRC1\Desktop\Micky\Star Fighter\1.png">
+                        <image-point name="hit" x="0.501992" y="0.780822" />
+                        <collision-poly>
+                            <point x="0.203187" y="0.232877" />
+                            <point x="0.498008" y="0.0547945" />
+                            <point x="0.800797" y="0.22831" />
+                            <point x="0.896414" y="0.497717" />
+                            <point x="0.908367" y="0.826484" />
+                            <point x="0.827689" y="0.990868" />
+                            <point x="0.589642" y="0.575342" />
+                            <point x="0.410359" y="0.561644" />
+                            <point x="0.173307" y="0.997717" />
+                            <point x="0.111554" y="0.876712" />
+                            <point x="0.10757" y="0.497717" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="close" pingpong="0" repeatcount="0" repeatto="0" sid="9684786864651658" speed="5">
+                    <frame duration="2" hotspotX="0.501992" hotspotY="0.502283" original-source="C:\Users\DYRC1\Desktop\Micky\Star Fighter\1.png">
+                        <image-point name="hit" x="0.501992" y="0.780822" />
+                        <collision-poly>
+                            <point x="0.203187" y="0.232877" />
+                            <point x="0.498008" y="0.0547945" />
+                            <point x="0.800797" y="0.22831" />
+                            <point x="0.896414" y="0.497717" />
+                            <point x="0.83267" y="0.995434" />
+                            <point x="0.601594" y="0.598173" />
+                            <point x="0.40239" y="0.618722" />
+                            <point x="0.161355" y="0.978311" />
+                            <point x="0.10757" y="0.497717" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="2" hotspotX="0.501992" hotspotY="0.504425" original-source="C:\Users\DYRC1\Desktop\Micky\Star Fighter\2.png">
+                        <image-point name="hit" x="0.501992" y="0.778761" />
+                        <collision-poly>
+                            <point x="0.203187" y="0.225664" />
+                            <point x="0.498008" y="0.0530973" />
+                            <point x="0.800797" y="0.221239" />
+                            <point x="0.880478" y="0.5" />
+                            <point x="0.804781" y="0.783186" />
+                            <point x="0.673307" y="0.986725" />
+                            <point x="0.585657" y="0.597345" />
+                            <point x="0.420319" y="0.599557" />
+                            <point x="0.283865" y="0.978981" />
+                            <point x="0.123506" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="2" hotspotX="0.501992" hotspotY="0.502242" original-source="C:\Users\DYRC1\Desktop\Micky\Star Fighter\3.png">
+                        <image-point name="hit" x="0.501992" y="0.780269" />
+                        <collision-poly>
+                            <point x="0.203187" y="0.2287" />
+                            <point x="0.498008" y="0.0538117" />
+                            <point x="0.800797" y="0.224215" />
+                            <point x="0.880478" y="0.497758" />
+                            <point x="0.780877" y="0.753363" />
+                            <point x="0.611554" y="0.984305" />
+                            <point x="0.565737" y="0.58296" />
+                            <point x="0.430279" y="0.587444" />
+                            <point x="0.412351" y="0.986546" />
+                            <point x="0.232072" y="0.766816" />
+                            <point x="0.123506" y="0.497758" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="2" hotspotX="0.501992" hotspotY="0.502283" original-source="C:\Users\DYRC1\Desktop\Micky\Star Fighter\4.png">
+                        <image-point name="hit" x="0.501992" y="0.780822" />
+                        <collision-poly>
+                            <point x="0.203187" y="0.232877" />
+                            <point x="0.498008" y="0.0547945" />
+                            <point x="0.800797" y="0.22831" />
+                            <point x="0.896414" y="0.497717" />
+                            <point x="0.756972" y="0.77169" />
+                            <point x="0.549801" y="0.977169" />
+                            <point x="0.561753" y="0.60274" />
+                            <point x="0.430279" y="0.60274" />
+                            <point x="0.446215" y="0.964612" />
+                            <point x="0.250996" y="0.792238" />
+                            <point x="0.10757" y="0.497717" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bullet" sid="4882115170043409">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="5921073917052736">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="5796372633346711">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="857301078129496" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\bullet.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.375" />
+                            <point x="0.833333" y="0.375" />
+                            <point x="0.833333" y="0.625" />
+                            <point x="0.166667" y="0.625" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bossBullet" sid="5045818612629132">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="3275982314813732">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="796207895329486">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8929125128385341" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Pictures\sg.png">
+                        <collision-poly>
+                            <point x="0.34375" y="0.34375" />
+                            <point x="0.5" y="0.28125" />
+                            <point x="0.65625" y="0.34375" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.59375" y="0.59375" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.40625" y="0.59375" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="laser" sid="4669102738848288">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="3536454993060829">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="1157449505989717">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8669721463552557" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\New\Pictures\aaaa.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BossHealth" sid="2588345539172441">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5274363094556051" speed="5">
+                    <frame duration="1" hotspotX="-0.00392157" hotspotY="0.375" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Title" sid="9301797898979883">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="2066629366264498">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="8343714105015923">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9273627380411899" speed="5">
+                    <frame duration="1" hotspotX="0.465672" hotspotY="0.515267" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\g5463.png">
+                        <collision-poly>
+                            <point x="0.00597015" y="0.0152672" />
+                            <point x="0.5" y="0.0458015" />
+                            <point x="0.99403" y="0.0152672" />
+                            <point x="0.99403" y="0.984733" />
+                            <point x="0.5" y="0.954198" />
+                            <point x="0.00597015" y="0.984733" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin" sid="3081618487332078">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="5950225387842729">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="5052617321090421">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="6895550540506523" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="minus" pingpong="0" repeatcount="1" repeatto="0" sid="2236907691886107" speed="5">
+                    <frame duration="1" hotspotX="0.46875" hotspotY="0.5625" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CoinsLBL" sid="1720839485087344">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txtCoins" sid="8019112311689275">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Particles" sid="6532906864101551">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="Particles2" sid="6853528457770324">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Pin" sid="8838662157030945">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="2653026408349789">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="playerzzz" sid="1001357759609016">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ShotTimer" sid="6499666918775971" type="number" />
+                <instance-variable name="ReloadTime" sid="3405685663291938" type="number" />
+                <instance-variable name="Coins" sid="39556326665208" type="number" />
+                <instance-variable name="isdead" sid="9120609565662483" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="1995815644378435">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="3600559311539024">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="3682470199564224">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4672583823727269" speed="5">
+                    <frame duration="1" hotspotX="0.685185" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.166667" y="0.195652" />
+                            <point x="0.5" y="0.0217391" />
+                            <point x="0.759259" y="0.282609" />
+                            <point x="1" y="0.5" />
+                            <point x="0.740741" y="0.695652" />
+                            <point x="0.5" y="0.956522" />
+                            <point x="0.166667" y="0.804348" />
+                            <point x="0.0185185" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="giphy" sid="9493801679213991">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="3109693173227563">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="43" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2530766550517408" speed="40">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BossText" sid="6610694400699065">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="8825586030213185">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="3457016237708581">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9762685239679465" speed="2">
+                    <frame duration="1" hotspotX="0.500963" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\g5463 212.png">
+                        <collision-poly>
+                            <point x="0.115607" y="0.656863" />
+                            <point x="0.493256" y="0.00980392" />
+                            <point x="0.870906" y="0.656863" />
+                            <point x="0.942197" y="0.862745" />
+                            <point x="0.0192678" y="0.990196" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500963" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.500963" hotspotY="0.5" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\g5463 212.png">
+                        <collision-poly>
+                            <point x="0.115607" y="0.656863" />
+                            <point x="0.493256" y="0.00980392" />
+                            <point x="0.870906" y="0.656863" />
+                            <point x="0.942197" y="0.862745" />
+                            <point x="0.0192678" y="0.990196" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fade" sid="3751379980204875">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3928892625717301" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CoverShip" sid="6050545040400415">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463335254468073" speed="5">
+                    <frame duration="1" hotspotX="0.490842" hotspotY="0.487124" original-source="C:\Users\New\Documents\My Games\Space Game\Assets\0001.png">
+                        <collision-poly>
+                            <point x="0.221612" y="0.622318" />
+                            <point x="0.490842" y="0.027897" />
+                            <point x="0.771062" y="0.609442" />
+                            <point x="0.699634" y="0.487124" />
+                            <point x="0.703297" y="0.285408" />
+                            <point x="0.490842" y="0.67382" />
+                            <point x="0.142857" y="0.444206" />
+                            <point x="0.265568" y="0.487124" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Life" sid="101401855020020">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="999596936185015">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Rotate" sid="389200341457081">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577777084372670" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.491745" original-source="C:\Users\New\Documents\My Games\Star Fighter\Assets\heart.png">
+                        <collision-poly>
+                            <point x="0.0893067" y="0.0660377" />
+                            <point x="0.513514" y="0.0943396" />
+                            <point x="0.921269" y="0.0825472" />
+                            <point x="0.957697" y="0.491745" />
+                            <point x="0.784959" y="0.764151" />
+                            <point x="0.513514" y="1" />
+                            <point x="0.233843" y="0.772406" />
+                            <point x="0.0434783" y="0.491745" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Box" sid="859885699772402">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="959025631322738" speed="5">
+                    <frame duration="1" hotspotX="0.495522" hotspotY="0.507438" original-source="C:\Users\New\Documents\My Games\Star Fighter\Assets\g5463 1111111111.png">
+                        <collision-poly>
+                            <point x="0" y="0.0154718" />
+                            <point x="0.497741" y="0.0464153" />
+                            <point x="0.998467" y="0.0154718" />
+                            <point x="0.998467" y="0.997929" />
+                            <point x="0.497741" y="0.966985" />
+                            <point x="0" y="0.997929" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Restart" sid="665164469831755">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="689525873288976">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="TextScore" sid="323835742772144">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="WebStorage" sid="764240644191588">
+            <plugin id="WebStorage" />
+        </object-type>
+        <object-type global="1" name="arScore" sid="308487124492871">
+            <plugin id="Arr" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Enemies" plugin-id="Sprite" sid="5008010868559932">
+            <members>
+                <member>BladeEnemy</member>
+                <member>boss</member>
+                <member>BugEnemy</member>
+                <member>FighterEnemy</member>
+                <member>SpikeyEnemy</member>
+            </members>
+        </family>
+        <family name="KillsPlayer" plugin-id="Sprite" sid="3108484092700592">
+            <members>
+                <member>bossBullet</member>
+                <member>laser</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Safari Audio Title.xml</layout>
+        <layout>Title.xml</layout>
+        <layout>Game.xml</layout>
+        <layout>Boss.xml</layout>
+        <layout>Loading.xml</layout>
+        <layout>LeaderBoard.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Game events.xml</event-sheet>
+        <event-sheet>Title events.xml</event-sheet>
+        <event-sheet>Safari Audio Title events.xml</event-sheet>
+        <event-sheet>Boss Event.xml</event-sheet>
+        <event-sheet>Loading Event.xml</event-sheet>
+        <event-sheet>LeaderBoard Event.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="141" />
+        <global-instance type="Touch" uid="142">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="143">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="144" />
+        <global-instance type="Mouse" uid="160" />
+        <global-instance type="WebStorage" uid="168" />
+    </global-instances>
+    <sounds-folder>
+        <file name="Lazer Fire 1.m4a" />
+        <file name="Lazer Fire 1.ogg" />
+        <file name="Lazer Fire 1.wav" />
+        <file name="Explosion 1.m4a" />
+        <file name="Explosion 1.ogg" />
+        <file name="Explosion 1.wav" />
+        <file name="RetroLaser1.m4a" />
+        <file name="RetroLaser1.ogg" />
+        <file name="RetroLaser1.wav" />
+        <file name="Lazer Ricochet.m4a" />
+        <file name="Lazer Ricochet.ogg" />
+        <file name="Lazer Ricochet.wav" />
+        <file name="Explosion 4.m4a" />
+        <file name="Explosion 4.ogg" />
+        <file name="Explosion 4.wav" />
+        <file name="SquareMotif1.m4a" />
+        <file name="SquareMotif1.ogg" />
+        <file name="SquareMotif1.wav" />
+        <file name="Upgrade1.m4a" />
+        <file name="Upgrade1.ogg" />
+        <file name="Upgrade1.wav" />
+        <file name="TronBlast1.m4a" />
+        <file name="TronBlast1.ogg" />
+        <file name="TronBlast1.wav" />
+        <file name="JetLoop1.m4a" />
+        <file name="JetLoop1.ogg" />
+        <file name="JetLoop1.wav" />
+        <file name="Explosion 3.m4a" />
+        <file name="Explosion 3.ogg" />
+        <file name="Explosion 3.wav" />
+        <file name="Explosion 2.m4a" />
+        <file name="Explosion 2.ogg" />
+        <file name="Explosion 2.wav" />
+        <file name="RetroLaser2.m4a" />
+        <file name="RetroLaser2.ogg" />
+        <file name="RetroLaser2.wav" />
+    </sounds-folder>
+    <music-folder>
+        <file name="EpicArpg.m4a" />
+        <file name="EpicArpg.ogg" />
+        <file name="MattOglseby - 3.m4a" />
+        <file name="MattOglseby - 3.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
